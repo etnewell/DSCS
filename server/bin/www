@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+const debug = require('debug')('express-example');
+
+const app = require('../server.js');
+
+app.set('port', process.env.PORT || 8080);
+
+const server = app.listen(app.get('port'), () => debug('Express server listning on port' + server.address().port));
