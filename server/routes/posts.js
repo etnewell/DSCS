@@ -4,8 +4,8 @@ const router = express.Router();
 const posts_api = require('../apis/posts_api');
 const authCheck = require('../config/middleware/authCheck');
 
-router.get('/', authCheck, posts_api.popular);
+router.get('/', posts_api.index);
 
-router.post('/new', authCheck, posts_api.createPost)
+router.post('/new', authCheck,  posts_api.createPost)
 
 module.exports = router;

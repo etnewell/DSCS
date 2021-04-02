@@ -25,9 +25,11 @@ var postSchema = mongoose.Schema({
         required: [false, 'Adding tags makes your post relevant to other posts']
     },
     UserId: {
-        type: String
+        type: String,
+        min: [0,],
+        required: true
     },
-    postId : mongoose.ObjectId(),
+    postId : mongoose.Types.ObjectId,
     dateCreated : {
         type: Date,
         required: [true, 'There seems to be an error in finding the date.']

@@ -46,4 +46,4 @@ app.get('*', (req, res) => {
     res.sendFile(rootHtmlPath);
 })
 
-module.exports(app);
+module.exports= app;

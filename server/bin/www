@@ -3,7 +3,9 @@
 const debug = require('debug')('express-example');
 
 const app = require('../server.js');
+var PORT = process.env.PORT || 8080;
 
 app.set('port', process.env.PORT || 8080);
 
 const server = app.listen(app.get('port'), () => debug('Express server listning on port' + server.address().port));
+console.log("App listening on PORT: " + PORT);
