@@ -27,9 +27,10 @@ var postSchema = mongoose.Schema({
     UserId: {
         type: String
     },
-    postId : {
-        type: String,
-        required: [true, 'Seems to be a program error']
+    postId : mongoose.ObjectId(),
+    dateCreated : {
+        type: Date,
+        required: [true, 'There seems to be an error in finding the date.']
     }
 })
 

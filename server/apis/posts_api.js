@@ -24,9 +24,16 @@ exports.createPost = (req, res) => {
     })
 };
 
-exports.filterPosts = (req, res) => {
-    var currentDate = new Date(Date.now());
+// exports.filterPosts = (req, res) => {
+//     var today = ;
 
-    Posts
-    .find().where('dateCreated').equals
-};
+//     Posts
+//     .find().where('dateCreated').equals
+// };
+
+// exports.filterPosts = (req, res) => {
+//     var today = ;
+
+//     Posts
+//     .find().where('dateCreated').equals
+// };
