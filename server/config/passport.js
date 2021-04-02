@@ -14,10 +14,10 @@ passport.use(new LocalStrategy(
                 return done(err);
 
             if (!user)
-                return done(null, {message: "User not found"});
+                return done(null, {message: "User not Found"});
 
             if (!user.validPassword(password))
-                return done(null, {message: "Invalid password"});
+                return done(null, {message: "Invalid Password"});
 
             return done(null, user);              
         })
