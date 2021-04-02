@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express.router();
+const router = express.Router();
 
 const users_api = require('../apis/users_api');
 

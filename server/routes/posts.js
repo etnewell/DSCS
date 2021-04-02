@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express.router();
+const router = express.Router();
 
 const posts_api = require('../apis/posts_api');
 const authCheck = require('../config/middleware/authCheck');
