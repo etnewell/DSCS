@@ -16,7 +16,7 @@ exports.index = (req, res) => {
 
 exports.createPost = (req, res) => {
     console.log("createPost function of posts api called");
-    req.body.UserId = req.user.id;
+    // req.body.UserId = req.user.id;
     req.body.dateCreated = new Date(Date.now());
     
 

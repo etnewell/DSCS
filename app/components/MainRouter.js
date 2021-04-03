@@ -9,6 +9,7 @@ import Login from './Login';
 import Signup from './Signup';
 import Posts from './Posts';
 import Profile from './Profile';
+import NewPost from './children/NewPost/NewPost';
 import axios from 'axios';
 
 export default class MainRouter extends Component {
@@ -81,15 +82,15 @@ export default class MainRouter extends Component {
                             logout={this.logout}    
                         />}
                     />
-                     {/* <Route exact path="/profile" render={props => 
-                        <Profile
+                     <Route exact path="/newpost" render={props => 
+                        <NewPost
                             {...props}
                             authenticate={this.authenticate}
                             deAuthenticate={this.deAuthenticate}
                             authenticated={this.state.authenticated}
                             logout={this.logout}    
                         />}
-                    />        */}
+                    />       
                 </Switch>
             </Router>
         )

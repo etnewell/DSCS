@@ -8,12 +8,15 @@ export default class Nav extends Component {
         return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">DSCS</a>
+    <a class="navbar-brand" href="/">DSCS</a>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/posts">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/newpost">New Post</a>
         </li>
         {this.props.authenticated ? (
         <li class="nav-item">
@@ -28,7 +31,7 @@ export default class Nav extends Component {
 
       </ul>
 
-    </div>
+
   </div>
 </nav>
         )

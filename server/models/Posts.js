@@ -24,11 +24,11 @@ var postSchema = mongoose.Schema({
         min: [0, ''],
         required: [false, 'Adding tags makes your post relevant to other posts']
     },
-    UserId: {
-        type: String,
-        min: [0,],
-        required: true
-    },
+    // UserId: {
+    //     type: String,
+    //     min: [0,],
+    //     required: true
+    // },
     postId : mongoose.Types.ObjectId,
     dateCreated : {
         type: Date,

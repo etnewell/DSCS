@@ -6,6 +6,6 @@ const authCheck = require('../config/middleware/authCheck');
 
 router.get('/', posts_api.index);
 
-router.post('/new', authCheck,  posts_api.createPost)
+router.post('/new',  posts_api.createPost)
 
 module.exports = router;

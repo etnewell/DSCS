@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 require('./main.css');
 
 export default class Main extends Component {
+    
+
     render() {
         return (
             <div>

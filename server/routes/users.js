@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+// const auth = require('../config/middleware/attachAuthenticationStatus')
 
 const users_api = require('../apis/users_api');
 
