@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 const configDB = require('./databaseCreds');
-mongoose.connect(configDB.url, {useNewUrlParser: true});
+mongoose.connect(configDB.url, {
+    useNewUrlParser: true,    
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false});
 
 const db = mongoose.connection;
 
