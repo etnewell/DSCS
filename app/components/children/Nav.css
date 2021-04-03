@@ -1,0 +1,16 @@
+.nav-item{
+    width: auto;
+    padding: 20px;
+    list-style: none;
+    color: rgb(56, 135, 160);
+}
+.navbar-brand{
+    margin-top: 7px;
+    color: rgb(56, 135, 160);
+    font-size: 30pt;
+}
+.navbar{
+    background: lightgray;
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(56, 135, 160);
+}

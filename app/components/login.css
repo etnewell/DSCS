@@ -1,0 +1,15 @@
+.loginmodal-container{
+    align-self: center;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+.login{
+    display: grid;
+    width: 50%;
+    text-align: center;
+    padding-left: 20%;
+    margin-left: 15%;
+}
+body{
+    background: none;
+}

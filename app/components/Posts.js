@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Nav from './children/Nav';
 import axios from 'axios';
 
-
+require('./posts.css')
 export default class Posts extends Component {
 
     constructor(props){
@@ -33,7 +33,7 @@ export default class Posts extends Component {
                         deAuthenticate={this.props.deAuthenticate}
                         logout={this.props.logout}
                         />
-                        <div>
+                        <div id="cardBox">
                         {this.state.posts.map((post) => (
                         <div class="card" key={post._id}>
                              <div class="card-body">

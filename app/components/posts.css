@@ -1,0 +1,18 @@
+#cardBox{
+    font-family: 'Titillium Web', sans-serif;
+}
+.card{
+    border-style: solid;
+    border-width: 1px;
+}
+.card-title{
+    color: rgb(56, 135, 160);
+    font-weight: bold;
+    font-size: 20pt;
+}
+.card-body{
+    margin-left: 2%;
+}
+body{
+    background: none;
+}

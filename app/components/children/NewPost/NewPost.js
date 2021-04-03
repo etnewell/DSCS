@@ -89,7 +89,7 @@ export default class NewPost extends Component {
 					<div className="container-page">
 						<form onSubmit={this.handleSubmit.bind(this)}>
 							<div className="col-md-6">
-								<h3 className="dark-grey">Registration</h3>
+								<h3 className="dark-grey">New Post</h3>
 
 								<div id="title-form" ref="titleForm" className="form-group col-lg-12">
 									<label>Title</label>
